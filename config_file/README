@@ -1,0 +1,17 @@
+
+If you want to use libconf in a c++ program include the header
+file this way:
+
+extern "C" {
+#include "libconf.h"
+}   
+
+
+To build the library type 'make'.
+This will create the library 'libconf.a' and an example program 'conf_example'.
+The example program parses the example config file 'example.conf'.
+
+
+The size of the config file to be read is limited to 500 lines with
+a maximum of 100 characters each.
+

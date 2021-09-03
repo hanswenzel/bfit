@@ -1,0 +1,32 @@
+****************************************************************************
+*                                                                          *
+*             BEXCLFIT - The ultimate B meson lifetime fitter              *
+*                                                                          *
+*	   (c) Andreas Heiss, University of Karlsruhe, Germany             *
+*              Hans Wenzel, Fermilab                                       *
+*                                                                          *
+****************************************************************************
+
+1. Introduction
+2. Compiling the program; requirements
+3. 
+
+
+                               --------------
+
+1. Introduction
+   ------------
+
+   This program was written to perform the fitting for the
+   new CDF Run I B exclusive lifetime analysis.
+   It performs simultaneous fitting of mass and lifetime
+   distributions of a single data sample or does a combined fit
+   of several data samples where the background distributions
+   are treated separately and the only common fit parameters are
+   basically the average lifetime and mass.
+   bexclfit is written in C++/ROOT. It does not read HBOOK ntuple
+   or ROOT trees directly. Those files have to be converted to 'BDecay'
+   files using the program 'mkbdecay'. It might be necessary to
+   change the mkbdecay program for your own ntuple or ROOT files.
+
+  
